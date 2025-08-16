@@ -198,52 +198,14 @@ section {
     box-sizing: border-box;
 }
 
-
-/**#contact ul {
-    list-style: none;
-    padding: 0;
-    max-width: 500px;
-    margin: 0 auto;
-}   
-
-#contact ul li {
-    margin-bottom: 15px;   
-    font-size: 1rem; 
+.request-cv {
+    align-items: center;
 }
 
-#contact a {
-    color: #007bff;
-    text-decoration: none;    
+.form-group input[type='checkbox'] {
+    width: auto;
+    margin-right: 10px;
 }
-
-#contact a:hover {
-    text-decoration: underline;    
-}
-
-#contact ul li i{
-    color: #007bff;
-    margin-right: 8px;
-    margin-bottom: 50px;
-}
-
-.contact-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: flex-start;
-}
-.contact-icons ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.contact-icons ul li a {
-    font-size: 28px;
-} **/
 
 footer {
     background-color: #333;
