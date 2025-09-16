@@ -113,6 +113,31 @@ section {
     background-color: #1200b3;
 }
 
+#leadership h2 {
+    text-align: center;
+    margin: 40px;
+}
+
+.achievement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.achievement h3 {
+    color: #007bff;
+}
+
+.achievement-card {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
 #contact {
     background-color: #f9f9f9;
     padding: 80px 20px;
@@ -270,6 +295,14 @@ footer {
         display: flex;
     }
 }
+
+@media (max-width: 600px) {
+    .achievement {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 @media (max-width: 768px) {
     .contact-wrapper {
