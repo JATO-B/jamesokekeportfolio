@@ -122,7 +122,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    max-width: 1200px; /** this controls how wide or small the text(including the background color) can be on both large screens **/
 }
 
 .achievement h3 {
@@ -130,12 +130,16 @@ section {
 }
 
 .achievement-card {
+    flex: 270px; /** this line of code ensures the cards are aligned side by side (2 on each row) on bigger screen and it ensures there is no much space at the bottom on smaller screen **/
     background-color: #f5f7fa;
-    padding: 20px;
+    width: 235px; /** this line of code controls the sizing of the cards on smaller screen **/
+    max-width: 350px; /** this controls how wide or small the text(including the background color) can be on both large and small screens **/
+    margin: 20px auto; /** this line of code ensures there is space between the cards **/
+    padding: 20px; /** this line of code ensures spacing inside the card (between the text) **/
     border-radius: 12px; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 250px;
     text-align: center;
+    box-sizing: border-box; /** this ensures that the card does not overstretch**/
 }
 
 #contact {
@@ -302,6 +306,14 @@ footer {
         align-items: center;
     }
 }
+
+@media (max-width: 480px) {
+    .achievement {
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+    }
+ }
 
 
 @media (max-width: 768px) {
