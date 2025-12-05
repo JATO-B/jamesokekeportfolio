@@ -17,7 +17,7 @@
                     <div id="hamburger">&#9776;</div>
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li> 
-                        <li><a href="about.html">Bio</a></li>
+                        <li><a href="about.html">Bio</a></li> 
                         <li><a href="pitch.html">Elevator Pitch</a></li> 
                         <li><a href="projects.html">Portfolio</a></li>
                         <li><a href="achievements.html">Achievements</a></li>
@@ -26,18 +26,35 @@
                 </nav>
             </div>
         </header>
-        <section class="home">
-            <img src="cyber-img.jpg" alt="Cybersecurity img" class="home-img">
-            <h1 class="home-name">James Okeke</h1>
-            <p class="home-title">Cybersecurity Analyst</p>
-            <p class="home-brand"><i>Passionate about protecting people and technology.</i></p>
+     <section>
+            <h2>Contact Me</h2>
+            <p>Feel free to send me a message using the form, or connect with me on social media:</p>
+            <div class="contact-wrapper">
+                <div class="contact-icons">
+                    <a href="mailto:jamesbenedict900@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/james-benedict900" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/JATO-B" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/mwpqzbdg" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message" id="" required></textarea>
+                        <div class="form-group request-cv">
+                            <label>
+                            <input type="checkbox" name="requestCV">Request downloadable CV
+                            </label>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <footer>
             <p>&copy; 2025 James Okeke. All rights reserved.</p>
         </footer>
-    </div>
-    
-    <script>
+        </div>
+        <script>
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.querySelector('.nav-links');
         hamburger.addEventListener('click' , () => {

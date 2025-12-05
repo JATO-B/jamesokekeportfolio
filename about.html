@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+            <div class="head-con">
+                <nav class="navbar">
+                    <h1 id="navhead">J.O</h1> 
+                    <div id="hamburger">&#9776;</div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="about.html">Bio</a></li> 
+                        <li><a href="pitch.html">Elevator Pitch</a></li> 
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>       
+                </nav>
+            </div>
+        </header>
+     <section>        
+            <div class="aboutcon">
+                <h2>About Me</h2>
+                <div class="about-wrap">
+                    <img src="pro-picss.jpg" alt="My Profile Picture" class="pro-pic">               
+                    <div class="about-text">
+                        <p>James Okeke is a calm and dedicated cybersecurity learner currently building a solid foundation in 
+                        Offensive security, defensive operations, and strategic governance. His interest in cybersecurity grew 
+                        from a lifelong desire to protect people, a value shaped by his years of service as a teacher, mentor, 
+                        and Vice Principal.</p>
+
+                        <p>His background in education strengthened his communication, leadership, and analytical abilities, 
+                        while managing digital exam systems for over 600 students developed his attention to detail and problem-solving
+                        mindset. These qualities now influence his approach to cybersecurity: careful, structured, and user-centered.</p>
+
+                        <p>James has hands-on experience with vulnerability assessments, Android forensics, virtual labs, and 
+                        security tools such as Nmap, pfSense, and Autopsy. He continues to expand his technical capabilities through
+                     certifications, practical projects, and continuous learning.</p>
+
+                        <p>He is currently developing broad cybersecurity competencies while preparing to specialize in defensive security 
+                        and eventually cloud security. With a strong commitment to growth and a people-first mindset, James aims to 
+                        contribute to safer digital environments and support organizations in strengthening their security posture.</p>      
+                   
+                        <!--<a href="James_Okeke_CV.pdf" target="_blank" class="btn">View CV</a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 James Okeke. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click' , () => {
+            navLinks.classList.toggle('show');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click' , () => {
+                navLinks.classList.remove('show');
+            });
+        });
+    </script>
+
+</body>
+</html>

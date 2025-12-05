@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>My Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ </head>
+    <body>
+        <div class="container">
+             <header>
+            <div class="head-con">
+                <nav class="navbar">
+                    <h1 id="navhead">J.O</h1> 
+                    <div id="hamburger">&#9776;</div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="about.html">Bio</a></li> 
+                        <li><a href="pitch.html">Elevator Pitch</a></li> 
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>       
+                </nav>
+            </div>
+        </header>
+        <section>
+         
+            <h2>Projects</h2>
+               <!--<div class="project">
+                <h3>My Maiden Website</h3>
+                <p>This was my first project using only HTML and CSS. It helped me understand how web pages are structured.</p>
+                <a href="https://myprojectlink.com" class="btn" target="_blank" >View Project</a>
+                  </div> -->
+                <div class="project">
+                <h3>Urban Mobility Intelligence Platform (ALX Team Project)</h3>
+                <p>My team and I designed a unified transport intelligence solution aimed at improving vehicle traceability and commuter 
+                    experience in African cities.</p>
+                <ul>
+                    <li>Worked as a cross-functional team to design and refine the solution end-to-end.</li>
+                    <li>Co-created 13 interactive wireframes covering commuter, driver, and admin dashboards.</li>
+                    <li>Conducted user interviews and feedback sessions to validate design decisions.</li>
+                    <li>Collaborated on a pitch video and presentation deck.</li>
+                    <li>Demonstrated how technology can reduce wait times, improve safety, and support data-driven transport management.</li>
+                    <li>Strengthened teamwork, communication, and user-centered design throughout the process.</li>
+                    <a href="https://stock-time-87721333.figma.site/ " class="btn" target="_blank">View Wireframe</a>
+                    <a href="https://youtu.be/n11wTyA-kxs" class="btn" 
+                    target="_blank">View Pitch Video</a>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Portfolio Page (This Page)</h3>
+                <p>This current portfolio website was built by me from scratch. I'm learning and improving as I go</p>
+            </div>
+            <div class="project">
+                <h3>Virtual Cybersecurity Lab Setup</h3>
+                <p>Simulated a real-world cybersecurity lab using Virtualbox. Configured Kali Linux as the attacker environment and Windows 10 as the target.</p>
+                <ul>
+                    <li>Installed a type 2 Hypervisor</li>
+                    <li>Created and networked virtual machines</li>
+                    <li>Tested connectivity and performed basic recon</li>
+                    <a href="https://drive.google.com/drive/folders/1PBUuUk7jZHFeoqS2deT07Oh4wz7KVmLY?usp=sharing" class="btn" target="_blank">View Report</a>
+                </ul>
+            </div>
+             <div class="project">
+                <h3>Android Forensics & Investigation Reports</h3>
+                <p>Used Autopsy to investigate a forensic image of am android device. Extracted key digital evidence and compiled a full report.</p>
+                <ul>
+                    <li>Recovered SMS, call logs, contacts, images, and deleted files</li>
+                    <li>Examined app history, crypto wallets, and browser history</li>
+                    <li>Documented process, screenshots, and findings</li>
+                    <a href=" https://drive.google.com/drive/folders/1AKtgUVUFmvt7dhtkMt3VZRNU6_xhIFoR?usp=drive_link" class="btn" target="_blank">View Report</a>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Virtual Firewall Implementation</h3>
+                <p>Enhanced the lab environment with a pfSense firewall to control and monitor network traffic between the attacker and target machines.</p>
+                <ul>
+                    <li>Installed and configured pfSense virtual appliance</li>
+                    <li>Set up WAN/LAN interfaces, DHCP, DNS, and NAT</li>
+                    <li>Created and tested Firewall rules (e.g., blocking ICMP pings) to observe how filtering and logging work.</li>
+                    <li>Verified connectivity, routing, and traffic control through baseline and filtered tests.</li>
+                    <a href="https://drive.google.com/drive/folders/1HvproZSe0eSzobjVntbZce6stu865Bde?usp=drive_link" class="btn" target="_blank">View Report</a>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 James Okeke. All rights reserved.</p>
+        </footer>
+        </div>
+    
+        <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click' , () => {
+            navLinks.classList.toggle('show');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click' , () => {
+                navLinks.classList.remove('show');
+            });
+        });
+    </script>
+
+    </body>
+</html>
